@@ -63,7 +63,7 @@ header {
     left: 100px;
     right: 0;
     bottom: 0;*/
-    margin-left: 24%;
+    margin-left: 23.5%;
     width: 980px;
     height: 80px;
     display: flex;
@@ -85,7 +85,7 @@ header {
 }
 
 .header-right {
-    width: 232px;
+    width: 242px;
     /*background-color: darkred;*/
 }
     ul {
@@ -111,11 +111,18 @@ header {
     }
     .sk {
         /*@include li-styl;*/
-         
+        font: Bold 18px/27px ;
+        letter-spacing: 0;
+        color: #5F2201;
+        opacity: 1;
         width: 38px;
     }
     .con {
         /*@include li-styl;*/
+        font: Bold 18px/27px ;
+        letter-spacing: 0;
+        color: #5F2201;
+        opacity: 1;
         width: 68px;
     }
 
@@ -148,7 +155,7 @@ header {
     width: 75px;
     text-align: center;
     /*padding-right: 160px;*/
-    margin-left: 68%;
+    margin-left: 69.5%;
     margin-top: 100px;
     margin-bottom: 100px;
     letter-spacing: -2;
@@ -158,33 +165,31 @@ header {
     font-size: 36px;
 }
 .skill {
-
-    margin-left: 20%;
+    margin-top: 96px;
+    margin-left: 23.6%;
+    width: 75px;
    /* background-color: darkblue;*/
 }
 
 .conteiners {
     /*margin-top: -4px;*/
-    width: 1020px;
+    margin-top: 95px;
+    margin-left: 28%;
+    width: 980px;
     margin: 0 auto;
     /*margin-left: 6%;*/
 }
 .frirst-step {
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
 }
 .skill-img1 {
-    /*margin-top: -3.9px;
-    margin-left: -3.2px;*/
     width: 400px;
     height: 300px;
-    /*margin: 0 auto;*/
-
 }
 .skill-p1 {
-    /*margin-top: -16px;*/
-    /*margin-right: -1px;*/
     padding-top: 0px;
     width: 400px;
     height: 300px;
@@ -195,14 +200,15 @@ header {
 
 .second-step {
     /*margin-right: -2px;*/
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
 }
 .skill-img2 {
     /*margin-top: 85.5px;*/
-    margin-bottom: 21px;
+    margin-bottom: 30px;
     width: 400px;
     height: 300px;
     /*margin-right: 2px;*/
@@ -220,7 +226,7 @@ header {
 
 }
 .about-container {
-    margin-top: 70px;
+    margin-top: 68px;
     height: 710px;
     width: 1440px;
     background-color: #FFF3DD;
@@ -230,7 +236,7 @@ header {
     margin-left: 16%;
     letter-spacing: 0;
     font-size: 36px;
-    padding-top: 87.5px;
+    padding-top: 80px;
     margin-bottom: 35px;
     font-weight: bold;
     width: 980px;
@@ -240,7 +246,7 @@ header {
 }
 .about-insid {
     margin-left: 350px;
-    margin-top: -430px;
+    margin-top: -390px;
     height: 710px;
     width: 740px;
     display: flex;
@@ -330,7 +336,7 @@ header {
 footer {
     background-color: #B9B9B9;
     height: 60px;
-    width: 100%;
+    width: 1440px;
 }
 .footer p {
     color: #FFFFFF;
