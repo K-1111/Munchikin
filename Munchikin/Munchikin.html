@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1440px, width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Munchikin</title>
@@ -12,13 +12,12 @@
   <meta name="viewport"
   content="width=device-width.inital-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel='stylesheet' href='./style.css'>
 </head>
-<body>
+<body class="wrap">
   <!-- ここにコードを書いていきましょう PC版 -->
   <div class="layout-properties">
+    <header class="head">
   
-       <header>
          <div class="header-left">
             <img class="logo" src="PCsite-img/logo.svg">
          </div>
@@ -41,8 +40,9 @@
                   <li class="gnav__menu__item"><a href="">Skill</a></li> 
               </ul>
           </div>
-        </div> 
+        </div>
         </header>
+      </div>
          <div class="top-wrapper">
            <div class="top-img">
             <img src="PCsite-img/cat-1.png">
@@ -81,12 +81,12 @@
     </div>
     <div class="about-insid">
     <div class="about-contents-left">
-      <img src="PCsite-img/cat-4.png">
-      <p>We are cute. There is no doubt about this. Nobody can’t object to this fact.</p>
+      <img id="img-l" src="PCsite-img/cat-4.png">
+      <p class="cont-p">We are cute. There is no doubt about this. Nobody can’t object to this fact.</p>
     </div>
     <div class="about-contents-right">
-      <img src="PCsite-img/cat-5.png">
-      <p>We are cute. There is no doubt about this. Nobody can’t object to this fact.</p>
+      <img id="img-r" src="PCsite-img/cat-5.png">
+      <p class="cont-p">We are cute. There is no doubt about this. Nobody can’t object to this fact.</p>
     </div>
     </div>
    </div>
@@ -117,7 +117,7 @@
 
 
   
-  </div>
+  
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/sample.js"></script>
