@@ -3,29 +3,27 @@
 html {
   margin: 0;
   padding: 0;
-  min-width: 1440px;
-  /*display: grid;*/
 }
 
 html {
-  /*-webkit-box-sizing: border-box;
-          box-sizing: border-box;*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  /*-webkit-box-sizing: inherit;
-          box-sizing: inherit;*/
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-  /*grid-template-columns: 1440px;*/
-  margin: 0;
-  padding: 0;
+  max-width: 1440px;
+  /*margin: 0;
+  padding: 0;*/
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
   font-weight: 500;
   /*color: #333;*/
   line-height: 2.0;
-  width: 1440px;
+  /*width: 980px;*/
 }
 
 h2, h3, h4, h5 {
@@ -35,7 +33,7 @@ h2, h3, h4, h5 {
 
 img {
   width: 100%;
-  /*vertical-align: bottom;*/
+  vertical-align: bottom;
 }
 
 ul, li, dl, dt, dd {
@@ -50,11 +48,12 @@ a {
 }
 
 /*---------模写---------PC版*/
-/*.wrap {
-  margin: 0 auto;
-}*/
+.wrap {
+  overflow: hidden;
+}
+
 .layout-properties {
-  width: 100%;
+  width: 1440px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -65,9 +64,48 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*
+.menu-icon {
+    display: none;
+}
+.gnav {
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.top-wrapper {
+    min-width: 1440px;
+    text-align: right;
+    display: flex;
+    width: 1440px;
 }
 
-.head {
+.top-img {
+    min-width: 1440px;
+    width: 1440px;
+    height: 738px;
+    
+}
+
+
+.title {
+    width: 75px;
+    text-align: center;
+    /*padding-right: 160px;*/
+  /*margin-left: 69.5%;*/
+  margin-top: 100px;
+  margin-bottom: 100px;
+  letter-spacing: -2;
+  color: #5F2201;
+  font: Bold 36px/61px YuGothic;
+  line-height: 42px;
+  font-size: 36px;
+}
+
+.layout-properties .head {
   width: 980px;
   height: 80px;
   display: -webkit-box;
@@ -78,10 +116,10 @@ a {
           justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
-  /*background-color: #008b5d;*/
+  /*background-color: rgb(0, 139, 93);*/
 }
 
-.header-left {
+.layout-properties .header-left {
   width: 365.1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,17 +128,17 @@ a {
     vertical-align: middle;*/
 }
 
-.logo {
+.layout-properties .logo {
   height: 80px;
-  /*line-height: 80px;*/
+  line-height: 80px;
 }
 
-.header-right {
+.layout-properties .header-right {
   width: 242px;
   /*background-color: darkred;*/
 }
 
-ul {
+.layout-properties ul {
   height: 80px;
   line-height: 80px;
   list-style: none;
@@ -115,7 +153,7 @@ ul {
         top: 50%;*/
 }
 
-.ab {
+.layout-properties .ab {
   /*@include li-styl;*/
   width: 52px;
   font: Bold 18px/27px;
@@ -124,7 +162,7 @@ ul {
   opacity: 1;
 }
 
-.sk {
+.layout-properties .sk {
   /*@include li-styl;*/
   font: Bold 18px/27px;
   letter-spacing: 0;
@@ -133,7 +171,7 @@ ul {
   width: 38px;
 }
 
-.con {
+.layout-properties .con {
   /*@include li-styl;*/
   font: Bold 18px/27px;
   letter-spacing: 0;
@@ -142,43 +180,9 @@ ul {
   width: 68px;
 }
 
-.menu-icon {
-  display: none;
-}
-
-.gnav {
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 98;
-}
-
-.top-img {
-  height: 738px;
-}
-.s-wrapper {
-  text-align: center;
-  padding-left: -2%;
-}
-.title {
-  width: 75px;
-  text-align: center;
-  /*padding-right: 160px;*/
-  margin-left: 46.5%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  letter-spacing: -2;
-  color: #5F2201;
-  font: Bold 36px/61px YuGothic;
-  line-height: 36px;
-  font-size: 36px;
-}
-
 .skill {
   margin-top: 96px;
-  margin-left: 15.4%;
+  /*margin-left: 23.6%;*/
   width: 75px;
   /* background-color: darkblue;*/
 }
@@ -186,7 +190,7 @@ ul {
 .conteiners {
   /*margin-top: -4px;*/
   margin-top: 95px;
-  margin-left: 10%;
+  /*margin-left: 28%;*/
   width: 980px;
   margin: 0 auto;
   /*margin-left: 6%;*/
@@ -221,7 +225,7 @@ ul {
 .second-step {
   /*margin-right: -2px;*/
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +238,7 @@ ul {
 
 .skill-img2 {
   /*margin-top: 85.5px;*/
-  /*margin-bottom: 30px;*/
+  margin-bottom: 30px;
   width: 400px;
   height: 300px;
   /*margin-right: 2px;*/
@@ -253,22 +257,18 @@ ul {
 }
 
 .about-container {
-  /*position: relative;*/
-  /*top: 1839px;
-  left: 40%%;*/
-  /*margin-top: 68px;*/
+  margin-top: 68px;
   height: 710px;
   width: 1440px;
-  margin: 0 auto;
   background-color: #FFF3DD;
 }
 
 .about-title p {
-  margin-left: 15.5%;
-  /*margin-bottom: 35px;*/
+  /*margin-left: 16%;*/
   letter-spacing: 0;
   font-size: 36px;
   padding-top: 86px;
+  margin-bottom: 35px;
   font-weight: bold;
   width: 980px;
   color: #5F2201;
@@ -276,12 +276,10 @@ ul {
 }
 
 .about-insid {
-  margin-left: 320px;
-  /*margin-left: 15.5%;*/
-  /*margin-top: -431px;*/
-  margin-top: -28%;
+  /*margin-left: 310px;*/
+  margin-top: -431px;
   height: 710px;
-  width: 804px;
+  width: 822px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,30 +344,28 @@ ul {
 }
 
 .contact-wrapper {
-  /*margin-top: 70px;*/
-  margin-left: 270px;
+  margin-top: 70px;
+  /*margin-left:  270px;*/
   margin-bottom: 0px;
-  /*text-align: left;*/
 }
 
 .contact-title p {
-  width: 550px;
   letter-spacing: 0;
   font-weight: bold;
   font-size: 36px;
   color: #5F2201;
   text-align: center;
-  margin-left: 181px;
+  /*margin-left: 181px;*/
   padding-bottom: 100px;
-  padding-top: 80px;
-  /*margin-top: 100px;*/
+  padding-top: 20px;
+  margin-top: 0px;
 }
 
 .contacts {
   height: 300px;
-  width: 800px;
+  width: 880px;
   margin-top: -50px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +401,6 @@ ul {
 }
 
 footer {
-  /*margin-left: 50%;*/
   background-color: #B9B9B9;
   height: 60px;
   width: 1440px;

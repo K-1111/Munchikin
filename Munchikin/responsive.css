@@ -3,14 +3,59 @@
 * { box-sizing: border-box;
 }
 
-@media (max-width:378px){
+@media all and (min-width:378px){
 /*==378px以下の時に適用したいCSSを記述==*/
+
+* { 
+    box-sizing: border-box;
+
+}
+html {
+    margin: 0;
+    padding: 0;
+    max-width: 378px;
+}
+body {
+    width: 92.06%;
+}
+.wrap {
+    width: 348px;
+    margin: 0 auto;
+}
+.layout-properties {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.head {
+    width: 348px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    /*background-color: #008b5d;*/
+  }
 header {
     max-width: 378px;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-around;
+    margin: 0 15%;
 }
 .logo {
     width: 125.82;
@@ -21,13 +66,29 @@ header {
 .header-rigth {
     display: none;
 }
+.header-ul {
+    display: none;
+}
 .menu-icon {
     display: block;
+    min-width: 22px;
+    height: 45px;
+    margin-top: 0px;
+}
+.menu-icon a {
+    display: block;
+    min-width: 22px;
+    min-height: 45px;
+    margin-top: 0px;
+}
+.fa {
+    min-width: 22px;
+    min-height: 45px;
 }
 .top-wrapper {
     margin: 0 auto;
     /*background-color: darkblue;*/
-    width: 100%;
+    width: 378px;
     height: 192.19px;   
     overflow:hidden;
 }
@@ -35,63 +96,76 @@ header {
     width: 100%;
     height: 192.19px;   
 }
-.sp-size {
+.s-wrapper {
     max-width: 345px;
     width: 100%;
+    text-align: center;
+    margin-left: 10px;
 }
-.titel {
+.title {
     width: 42px;
-    text-align: left;
-    font: Bold 20px/34px YuGothic;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
     letter-spacing: 0;
     color: #5F2201;
     opacity: 1;
-    padding-top: 50.01;
-    padding-bottom: 40px;
-    text-align: center;
+    margin-top: 50.01px;
+    margin-left: 167px;
+    margin-bottom: 40px;
+    
 }
 .skill {
-    margin: 0 auto;
+    min-width: 348px;
+    height: 600px;
+    text-align: left;
+    margin-left: -25px;
+    margin-top: -10px;
 }
 .conteiners {
     margin-top: 0px;
-    width: 100%;
+    width: 378px;
 }
 .frirst-step {
     display: flex;
     flex-direction: column;
+    min-width: 378px;
 }
 .skill-img1 {
-    width: 100%;
+    max-width: 348px;
     height: 259px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 .skill-p1 {
-    width: 100%;
+    width: 348px;
     height: 156px;
-    margin-top: 0px;
+    margin-top: 50px;
+    margin-left: 30px;
     padding-top: 0px;
     letter-spacing: 0;
+    text-align: left;
     /*line-height: 26.5px;*/
 }
 .second-step {
-    margin-right: 0px;
+    margin-left: 30px;
     margin-top: 39px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 .skill-img2 {
-    width: 100%;
+    width: 348px;
     height: 259px;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    margin-right: 0px;
+    margin-left: 0px;
+    text-align: left;
 }
 .skill-p2 {
-    width: 100%;
+    width: 348px;
     height: 156px;
-    margin-top: 0px;
-    padding-top: 0px;
-    text-align: left;
+    margin-top: 40px;
+    margin-left: 0px;
     font: Medium 15px/26px YuGothic;
     letter-spacing: 0;
     color: #000000;
@@ -101,25 +175,29 @@ header {
 .about-container {
     width: 375px;
     height: 952px;
+    margin-top: 490px;
     background: #FFF3DD 0% 0% no-repeat padding-box;
     opacity: 1;
+    display: flex;
 }
 .about-title {
-    width: 58px;
-    height: 20px;
-    text-align: left;
+    /*width: 58px;*/
+    height: 882px;
+    margin-left: 24%;
+    margin-top: 0px;
+    /*text-align: center;*/
     font: Bold 20px/34px YuGothic;
     letter-spacing: 0;
     color: #5F2201;
     opacity: 1;
-    margin-top: 0px;
     background-color: #FFF3DD;
 }
 .about-title p {
     width: 58px;
     height: 20px;
     letter-spacing: 0;
-    padding-top: 0px;
+    padding-top: 40px;
+    margin-left: 72px;
     margin-bottom: 0px;
     color: #5F2201;
     text-align: center;
@@ -127,23 +205,30 @@ header {
     opacity: 1;
 }
 .about-insid {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: -205px;
+    margin-top: 110px;
     height: 694px;
     max-width: 294px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 .about-contents-left{
     height: 322px;
     max-width: 294px;
     width: 100%;
 }
+.con-p {
+    width: 294px;
+    height: 41px;
+    margin-top: 31px;
+}
 .about-contents-right {
+    margin-top: 50px;
+    width: 294px;
     height: 322px;
     max-width: 294px;
-    width: 100%;
+    padding-top: 0px;
 }
 .btn {
     display: inline-block;
@@ -153,20 +238,15 @@ header {
     border-radius: 25px;
 }
 .more {
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 820px;
+    margin-left: 40px;
+    padding: 5px 37px;
     letter-spacing: 0;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
 }
 .contact-wrapper {
-    margin-top: 100px;
-    margin-left:  0px;
-    margin-bottom: 0px;
+    margin-left: 30px;
 }
 .contact-title p {
     width: 76px;
@@ -177,9 +257,9 @@ header {
     color: #5F2201;
     opacity: 1;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 120px;
     padding-bottom: 40px;
-    padding-top: 0px;
+    padding-top: 50px;
     margin-top: 0px;
 }
 .contacts {
@@ -191,13 +271,26 @@ header {
     flex-direction: column;
     justify-content:space-around;
 }
-
-.contact-right {
-    margin-top: 50px;
-    text-align: center;
-    width: 117px;
-    height: 93px;
+.contact-left {
+    margin-top: 60px;
+    margin-left: 10px;
 }
+.contact-right {
+    width: 172px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: center;
+}
+.contact-right p {
+    margin-bottom: 30px;
+    width: 179px;
+    height: 15px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    
+}
+
 .map {
     width: 100px;
     height: 48px;
@@ -209,9 +302,12 @@ header {
     border-radius: 25px;
     color: #5F2201;
     opacity: 1;
-    padding: 3px 24px;
-    margin-right: 0px;
+    padding-top: 8px;
+    padding-left: 33px;
+    margin-top: 38px;
+    margin-left: 40px;
     margin-bottom: 0px;
+    display: block;
 }
 footer {
     background-color: #B9B9B9;
@@ -219,13 +315,14 @@ footer {
     width: 375px;
 }
 .footer p {
-    width: 96px;
+    width: 378px;
     height: 12px;
     font: Medium 12px/27px YuGothic;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
-    padding: 24px;
+    padding-top: 8px;
+    padding-left: 46px;
     text-align: center;
 }
 }
